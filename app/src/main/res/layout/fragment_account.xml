@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentLayout.Account">
+
+      <!--Toolbar..........-->
+      <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="64dp"
+          app:titleTextColor="#000"
+          ></android.support.v7.widget.Toolbar>
+
+      <!--ScrollView...........-->
+      <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:fillViewport="true">
+
+          <!--Table Layout section.......-->
+          <TableLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:stretchColumns="1">
+
+              <!--Profile section Linear layout..........-->
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:orientation="vertical">
+
+                  <!--Circular image view for displaying the profile image.....-->
+                  <de.hdodenhof.circleimageview.CircleImageView
+                      android:id="@+id/profile_image"
+                      android:layout_width="120dp"
+                      android:layout_height="120dp"
+                      android:layout_gravity="center"
+                      android:src="@drawable/profile" />
+
+                  <!--Text view For dispay User profie name.......-->
+                  <TextView
+                      android:id="@+id/profile_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="15dp"
+                      android:text="Manilal"
+                      android:textColor="#000"
+                      android:textSize="20sp" />
+              </LinearLayout>
+              <!--End of profile section linear layout......-->
+
+              <!--Separator.....-->
+              <View style="@style/Divider2" />
+              <!--end of separator....-->
+
+              <!--Shop section linear layout.....-->
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="30dp"
+                  android:layout_marginBottom="10dp"
+                  android:orientation="vertical">
+
+                  <!--Text view for title of the section......-->
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="20dp"
+                      android:text="SHOP"
+
+                      android:textColor="#000"
+                      android:textSize="15sp"
+                      android:textStyle="bold" />
+
+                  <!--Relative layout for arranging Kirana name card in sequence.......-->
+                  <RelativeLayout
+                      android:id="@+id/account_rl_1"
+                      style="@style/Account_setting_card_rl">
+
+                      <!--Image view (icon) for kirana....-->
+                      <ImageView
+                          android:id="@+id/phone3"
+                          style="@style/account_setting_card_image"
+                          android:src="@drawable/ic_shop" />
+
+                      <!--Text view For Kirana name header.....-->
+                      <TextView
+                          android:id="@+id/kirana_name"
+                          style="@style/account_setting_card_header"
+                          android:layout_toRightOf="@+id/phone3"
+                          android:text="Kirana name"/>
+
+                      <!--Text view for kirana sub-header....-->
+                      <TextView
+                          style="@style/account_setting_card_subHeader"
+                          android:layout_below="@+id/kirana_name"
+                          android:layout_toRightOf="@+id/phone3"
+                          android:text="manilal@kirana" />
+
+
+                  </RelativeLayout>
+                  <!--End of Relative layout for arranging Kirana name card in sequence.......-->
+
+                  <!--Relative layout for arranging Location/address of the shop......-->
+                  <RelativeLayout
+                      android:id="@+id/account_rl_2"
+                      style="@style/Account_setting_card_rl">
+
+                      <!--Image view (icon) for kirana ocation/adddress....-->
+                      <ImageView
+                          android:id="@+id/location"
+                          style="@style/account_setting_card_image"
+                          android:src="@drawable/ic_location" />
+
+                      <!--Text view for kirana location header.....-->
+                      <TextView
+                          android:id="@+id/txt_mobile4"
+                          style="@style/account_setting_card_header"
+                          android:layout_toRightOf="@+id/location"
+                          android:text="Location "/>
+
+                      <!--Text view for kirana location sub-header.....-->
+                      <TextView
+                          style="@style/account_setting_card_subHeader"
+                          android:layout_below="@+id/txt_mobile4"
+                          android:layout_toRightOf="@+id/location"
+                          android:text="Udaipur collectrate office" />
+                  </RelativeLayout>
+                  <!--End of Relative layout for arranging Location/address of the shop......-->
+
+                  <!--Relative layout for arranging register mobile number of the shop......-->
+                  <RelativeLayout
+                      android:id="@+id/account_rl_3"
+                      style="@style/Account_setting_card_rl">
+
+                      <!--Image view (icon) for kirana register number....-->
+                      <ImageView
+                          android:id="@+id/reg_mobile"
+                          style="@style/account_setting_card_image"
+                          android:src="@drawable/ic_smartphone" />
+
+                      <!--Text view for kirana register mobile number header.....-->
+                      <TextView
+                          android:id="@+id/txt_reg_mobile"
+                          style="@style/account_setting_card_header"
+                          android:layout_toRightOf="@+id/reg_mobile"
+                          android:text="Register mobile"/>
+
+                      <!--Text view for kirana register mobile number sub-header.....-->
+                      <TextView
+                          style="@style/account_setting_card_subHeader"
+                          android:layout_below="@+id/txt_reg_mobile"
+                          android:layout_toRightOf="@+id/reg_mobile"
+                          android:text="+91 8447909387" />
+                  </RelativeLayout>
+                  <!--End of Relative layout for arranging register mobile number of the shop......-->
+
+                  <!--Relative layout for arranging otehr user of the shop......-->
+                  <RelativeLayout
+                      android:id="@+id/account_rl_4"
+                      style="@style/Account_setting_card_rl">
+
+                      <ImageView
+                          android:id="@+id/other_user"
+                          style="@style/account_setting_card_image"
+                          android:src="@drawable/ic_two_friends" />
+
+                      <TextView
+                          style="@style/account_setting_card_header"
+                          android:id="@+id/txt_other_user"
+                          android:layout_toRightOf="@+id/other_user"
+                          android:text="Other users"/>
+
+
+                      <TextView
+                          style="@style/account_setting_card_subHeader"
+                          android:layout_below="@+id/txt_other_user"
+                          android:layout_toRightOf="@+id/other_user"
+                          android:text="Sanjay , Pankaj , Ishan , Nishan " />
+                  </RelativeLayout>
+                  <!-- End of Relative layout for arranging Other user of the shop......-->
+
+
+              </LinearLayout>
+              <!--End of shop section linear layout.....-->
+
+              <!--Separator......-->
+              <View style="@style/Divider2" />
+
+              <!--Contact details linear layout.....-->
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="30dp"
+                  android:orientation="vertical"
+                  android:layout_marginBottom="10dp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="20dp"
+                      android:text="CONTACT DETAILS"
+                      android:textColor="#000"
+                      android:textSize="15sp"
+                      android:textStyle="bold" />
+
+
+                  <RelativeLayout
+                      android:id="@+id/account_rl_5"
+                      style="@style/Account_setting_card_rl">
+
+                      <ImageView
+                          android:id="@+id/phone"
+                          style="@style/account_setting_card_image"
+                          android:src="@drawable/ic_phone" />
+
+                      <TextView
+                          style="@style/account_setting_card_header"
+                          android:id="@+id/txt_mobile"
+                          android:layout_toRightOf="@+id/phone"
+                          android:text="Mobile number"/>
+
+
+                      <TextView
+                          style="@style/account_setting_card_subHeader"
+                          android:layout_below="@+id/txt_mobile"
+                          android:layout_toRightOf="@+id/phone"
+                          android:text="+91 8851134245" />
+
+
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:id="@+id/account_rl_6"
+                      style="@style/Account_setting_card_rl">
+
+                      <ImageView
+                          android:id="@+id/email"
+                          style="@style/account_setting_card_image"
+                          android:src="@drawable/ic_email" />
+
+                      <TextView
+                          style="@style/account_setting_card_header"
+                          android:id="@+id/txt_email"
+                          android:layout_toRightOf="@+id/email"
+                          android:text="Email id"/>
+
+
+                      <TextView
+                          style="@style/account_setting_card_subHeader"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/txt_email"
+                          android:layout_toRightOf="@+id/email"
+                          android:text="Sanjay@munshig.in" />
+
+
+                  </RelativeLayout>
+
+                  <RelativeLayout
+                      android:id="@+id/account_rl_7"
+                      style="@style/Account_setting_card_rl">
+
+                      <ImageView
+                          android:id="@+id/phone5"
+                          style="@style/account_setting_card_image"
+                          android:src="@drawable/ic_exit_to_app_black_24dp" />
+
+                      <TextView
+                          android:id="@+id/txt_mobile5"
+                          style="@style/account_setting_card_header"
+                          android:layout_toRightOf="@+id/phone5"
+                          android:text="Log out"/>
+
+
+                      <TextView
+                          style="@style/account_setting_card_subHeader"
+                          android:layout_below="@+id/txt_mobile5"
+                          android:layout_toRightOf="@+id/phone5"
+                          android:text="Log out from munshiG" />
+
+
+                  </RelativeLayout>
+
+
+
+              </LinearLayout>
+
+
+          </TableLayout>
+
+      </ScrollView>
+</LinearLayout>

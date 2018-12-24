@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentLayout.AppSetting">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--ScrollView...........-->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <!--Table Layout section.......-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+            <!--setting switch section linear layout.....-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <!--Relative layout for arranging app setting inventory card in sequence.......-->
+                <RelativeLayout
+                    android:id="@+id/setting_rl_1"
+                    style="@style/Account_setting_card_rl">
+
+                    <!--Image view (icon) for printer ....-->
+                    <ImageView
+                        android:id="@+id/inventory"
+                        style="@style/account_setting_card_image"
+                        android:src="@drawable/ic_inventory_tracker" />
+
+                    <!--Text view For app setting name header.....-->
+                    <TextView
+                        android:id="@+id/txt_inventory"
+                        style="@style/app_setting_card_header"
+                        android:layout_toRightOf="@+id/inventory"
+                        android:text="Inventory tracker"/>
+
+                    <!--switch for turn on/off inventory tracker.....-->
+                    <Switch
+                        android:id="@+id/inventory_switch"
+                        android:text="on"
+                        android:checked="true"
+                        style="@style/app_setting_switch"/>
+
+                </RelativeLayout>
+                <!--end of Relative layout for arranging app setting inventory card in sequence.......-->
+
+                <!--Relative layout for arranging app seting printer card in sequence.......-->
+                <RelativeLayout
+                    android:id="@+id/setting_rl_2"
+                    style="@style/Account_setting_card_rl">
+
+                    <!--Image view (icon) for printer....-->
+                    <ImageView
+                        android:id="@+id/printer"
+                        style="@style/account_setting_card_image"
+                        android:src="@drawable/ic_printer" />
+
+                    <!--Text view For printer name header.....-->
+                    <TextView
+                        android:id="@+id/txt_printer"
+                        style="@style/app_setting_card_header"
+                        android:layout_toRightOf="@+id/printer"
+                        android:text="Printer"/>
+
+                    <Switch
+                        android:id="@+id/printer_switch"
+                        android:text="on"
+                        android:checked="true"
+                        style="@style/app_setting_switch"/>
+
+                </RelativeLayout>
+                <!--Relative layout for arranging app setting connect scanner card in sequence.......-->
+                <RelativeLayout
+                    android:id="@+id/setting_rl_4"
+                    style="@style/Account_setting_card_rl">
+
+                    <!--Image view (icon) for scanner....-->
+                    <ImageView
+                        android:id="@+id/scanner"
+                        style="@style/account_setting_card_image"
+                        android:src="@drawable/ic_barcode_scanner" />
+
+                    <!--Text view For scanner name header.....-->
+                    <TextView
+                        android:id="@+id/txt_scanner"
+                        style="@style/app_setting_card_header"
+                        android:layout_toRightOf="@+id/scanner"
+                        android:text="Connect scanner"/>
+
+                    <Switch
+                        android:id="@+id/scanner_switch"
+                        android:text="on"
+                        android:checked="true"
+                        style="@style/app_setting_switch"/>
+
+                </RelativeLayout>
+                <!--End of Relative layout for arranging scanner name card in sequence.......-->
+            </LinearLayout>
+            <!--End of app setting section linear layout.....-->
+            <!--Separator......-->
+            <View style="@style/Divider2" />
+
+
+
+            <!--setting bottom section linear layout.....-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <!--Relative layout for arranging app setting hindi package card in sequence.......-->
+                <RelativeLayout
+                    android:id="@+id/setting_rl_5"
+                    style="@style/Account_setting_card_rl">
+
+                    <!--Image view (icon) for download hindi package ....-->
+                    <ImageView
+                        android:id="@+id/hindi_package"
+                        style="@style/account_setting_card_image"
+                        android:src="@drawable/ic_package" />
+
+                    <!--Text view For app downoad hindi package header.....-->
+                    <TextView
+                        android:id="@+id/txt_hindi_package"
+                        style="@style/app_setting_card_header"
+                        android:layout_toRightOf="@+id/hindi_package"
+                        android:text="Hindi offline package"/>
+
+
+                </RelativeLayout>
+                <!--end of Relative layout for arranging app setting hindi package card in sequence.......-->
+
+
+                <!--Relative layout for arranging app setting allow multi devices card in sequence.......-->
+                <RelativeLayout
+                    android:id="@+id/setting_rl_6"
+                    style="@style/Account_setting_card_rl">
+
+                    <!--Image view (icon) for allow multiple devices ....-->
+                    <ImageView
+                        android:id="@+id/multi_device"
+                        style="@style/account_setting_card_image"
+                        android:src="@drawable/ic_multiple_devices" />
+
+                    <!--Text view For app download allow multiple devices.....-->
+                    <TextView
+                        android:id="@+id/txt_multi_device"
+                        style="@style/app_setting_card_header"
+                        android:layout_toRightOf="@+id/multi_device"
+                        android:text="Allow virtual keyboard"/>
+
+                </RelativeLayout>
+                <!--end of Relative layout for arranging app setting inventory card in sequence.......-->
+
+            </LinearLayout>
+
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

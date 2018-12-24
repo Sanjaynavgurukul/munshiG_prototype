@@ -1,0 +1,189 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+    <style name="ActionBar" parent="Theme.AppCompat">
+    </style>
+    <style name="CustomActionBarTheme">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/TransparentActionBar</item>
+    </style>
+    <style name="TransparentActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--TODO main page...-->
+    <!--MainPage bottom nav bar card Styles...-->
+    <style name="mainPageBottomNavBarCard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+    <!--MainPage bottom nav bar card label style...-->
+    <style name="mainPageCardLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--MainPage bottom nav bar card icon style...-->
+    <style name="mainPageBottomNavBarCardIcon">
+        <item name="android:layout_width">98dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <!--TODO separator(divider)...-->
+    <!--separator style....-->
+    <style name="Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+    <!--separator2 style....-->
+    <style name="Divider2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <!--TODO - Account page styles..-->
+    <!--card Relative layout dimension..........-->
+    <style name="Account_setting_card_rl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!--card image view dimension..........-->
+    <style name="account_setting_card_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <!--card header text dimension..........-->
+    <style name="account_setting_card_header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textColor">@color/cardview_dark_background</item>
+    </style>
+    <!--card header text dimension..........-->
+    <style name="account_setting_card_subHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+    <!--end of Account setting layout xml style............................-->
+
+    <!--App setting layout xml style...................-->
+    <style name="app_setting_card_header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textColor">@color/cardview_dark_background</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="app_setting_switch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:switchMinWidth">56dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textOff">OFF</item>
+        <item name="android:textOn">ON</item>
+    </style>
+
+
+    <!--All tranaction page all Layout design styles...........-->
+    <style name="insights_header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">20sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="main_balance_price">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="price_section_rl">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="header_content_rl">
+        <item name="android:layout_width">340sp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="header_content_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">20sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Inventory page design styles...-->
+    <style name="inventoryCardIcon">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+
+    </style>
+    <style name="inventoryRl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">51dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="inventoryItemName">
+        <item name="android:layout_width">215dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!--Indian rupee icons style...-->
+    <style name="rupee_icon">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/ic_rupee_indian</item>
+    </style>
+</resources>
+

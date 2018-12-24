@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentLayout.MainPage">
+
+    <!--Main Reative layout...-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--MainPage tool bar...-->
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/toolBarPicture"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/profile"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+
+
+                <TextView
+                    android:text="@string/profileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:text="@string/shopName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/setting"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_settings" />
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+        <!--Linear layout fot Center munshiG logo and label...-->
+        <LinearLayout
+            android:id="@+id/ll_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/munshiG_face"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_gravity="center"
+                android:src="@drawable/munshi_logo"/>
+            <ImageView
+                android:id="@+id/munshiG_title"
+                android:layout_width="266dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/munshig_logo"/>
+        </LinearLayout>
+        <!--Bottom navigation bar section.....-->
+        <RelativeLayout
+            android:id="@+id/InnerRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <!--Purchase bottomm nav bar cardView...-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/purchaseCard"
+                    style="@style/mainPageBottomNavBarCard">
+
+                    <TextView
+                        style="@style/mainPageCardLabel"
+                        android:text="@string/purchaseLabel" />
+
+                    <ImageView
+                        style="@style/mainPageBottomNavBarCardIcon"
+                        android:src="@drawable/ic_purchase" />
+                </android.support.v7.widget.CardView>
+                <!--Inventory bottom nav bar cardView...-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/inventoryCard"
+                    style="@style/mainPageBottomNavBarCard">
+
+                    <TextView
+                        style="@style/mainPageCardLabel"
+                        android:text="@string/inventoryLabel" />
+
+                    <ImageView
+                        style="@style/mainPageBottomNavBarCardIcon"
+                        android:src="@drawable/ic_inventory" />
+                </android.support.v7.widget.CardView>
+                <!--Sales dairy bottom nav bar cardView...-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/salesDairyCard"
+                    style="@style/mainPageBottomNavBarCard">
+
+                    <TextView
+                        style="@style/mainPageCardLabel"
+                        android:text="@string/salesLabel" />
+
+                    <ImageView
+                        style="@style/mainPageBottomNavBarCardIcon"
+                        android:src="@drawable/ic_sale" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

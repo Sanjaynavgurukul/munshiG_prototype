@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/purchase_insights"
+        android:orderInCategory="100"
+        android:title="Purchase Insights"
+        android:icon="@drawable/ic_purchase"
+        />
+    <item
+        android:id="@+id/sales_insights"
+        android:orderInCategory="100"
+        android:title="Sales Insights"
+        android:icon="@drawable/ic_purchase"
+        />
+</menu>
